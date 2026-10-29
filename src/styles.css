@@ -158,7 +158,6 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; mar
 .tr-year { font-size: 12px; font-weight: 600; color: var(--terracotta); }
 .tr-course { font-weight: 600; font-size: 15px; line-height: 1.35; }
 .tr-org { font-size: 14px; color: var(--muted); }
-.src { display: block; margin-top: 14px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); opacity: .7; }
 
 /* Journey */
 .journey { background: var(--teal); color: var(--ivory); }

@@ -329,7 +329,6 @@ function Record() {
               {r.planned && <span className="planned">Planned</span>}
               <h3>{r.title}</h3>
               <p>{r.text}</p>
-              <span className="src">{r.source === 'press' ? 'As reported' : 'From her CV'}</span>
             </TiltCard>
           ))}
         </div>

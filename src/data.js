@@ -101,17 +101,16 @@ export const journey = [
   { year: '23 Jul 2026', title: 'Joins NEDP, eyes Maara', text: 'Joined the National Economic Development Party and said she will seek the Maara seat in Tharaka Nithi, subject to party primaries.' },
 ]
 
-// source: 'cv' = from her CV; 'press' = as reported in the press.
 export const record = [
-  { tag: 'Safety', title: 'Fire stations', text: 'Built four fire stations to cut response times, and recruited fire officers and county security constables.', source: 'cv' },
-  { tag: 'Safety', title: 'Nairobi Risk Hub', text: 'Championed the Risk Hub to refine disaster management policy, with risk assessments and emergency response plans.', source: 'cv' },
-  { tag: 'Justice', title: 'SGBV law', text: 'Signed the Sexual and Gender Based Violence Bill into law to speed up efforts to end gender-based violence in Nairobi.', source: 'cv' },
-  { tag: 'Education', title: 'Free ECDE and bursaries', text: 'Launched free ECDE funds. Sh590M in bursaries and 520 teachers, as reported. New classrooms and learning materials.', source: 'cv' },
-  { tag: 'Transport', title: 'Green Park Terminus', text: 'Launched the NMS Green Park Bus Terminus to ease traffic congestion in the city.', source: 'cv' },
-  { tag: 'Health', title: 'Hospitals', text: 'Equipped hospitals and added health workers. 24 hospitals delivered with NMS, as reported.', source: 'cv' },
-  { tag: 'City services', title: 'Roads, water and waste', text: 'Better garbage collection, rehabilitated and new roads, and new boreholes and repaired water pipes.', source: 'cv' },
-  { tag: 'Finance', title: 'Pending bills', text: 'Ksh1.3bn in pending bills handed to NMS for settlement.', source: 'press' },
-  { tag: 'Region', title: 'CEREB', text: 'Joined Central Region Economic Bloc governors at a meeting hosted by the British High Commissioner.', source: 'press' },
+  { tag: 'Safety', title: 'Fire stations', text: 'Built four fire stations to cut response times, and recruited fire officers and county security constables.' },
+  { tag: 'Safety', title: 'Nairobi Risk Hub', text: 'Championed the Risk Hub to refine disaster management policy, with risk assessments and emergency response plans.' },
+  { tag: 'Justice', title: 'SGBV law', text: 'Signed the Sexual and Gender Based Violence Bill into law to speed up efforts to end gender-based violence in Nairobi.' },
+  { tag: 'Education', title: 'Free ECDE and bursaries', text: 'Launched free ECDE funds. Sh590M in bursaries and 520 teachers, as reported. New classrooms and learning materials.' },
+  { tag: 'Transport', title: 'Green Park Terminus', text: 'Launched the NMS Green Park Bus Terminus to ease traffic congestion in the city.' },
+  { tag: 'Health', title: 'Hospitals', text: 'Equipped hospitals and added health workers. 24 hospitals delivered with NMS, as reported.' },
+  { tag: 'City services', title: 'Roads, water and waste', text: 'Better garbage collection, rehabilitated and new roads, and new boreholes and repaired water pipes.' },
+  { tag: 'Finance', title: 'Pending bills', text: 'Ksh1.3bn in pending bills handed to NMS for settlement.' },
+  { tag: 'Region', title: 'CEREB', text: 'Joined Central Region Economic Bloc governors at a meeting hosted by the British High Commissioner.' },
 ]
 
 // No verified awards were found. Replace these with confirmed awards.
