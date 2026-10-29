@@ -40,14 +40,16 @@ All motion is switched off for visitors who prefer reduced motion.
 
 ## Content notes
 
-- Sources: Wikipedia, Nairobi City County, The Standard, The Star, Citizen Digital, People Daily, Kenyans.co.ke.
-- Figures are shown "as reported" in the press and should be confirmed by the office.
+- Main source: her CV (14 May 2025): roles and dates, achievements, education, professional training, contact details.
+- Other sources: Wikipedia, Nairobi City County, The Standard, The Star, Citizen Digital, People Daily, Kenyans.co.ke.
+- Record cards are labelled "From her CV" or "As reported".
+- The bursary, teacher, hospital and pending-bill figures are as reported in the press.
 - The constituency is spelt Maara (Citizen, Capital FM); The Star used "Mara".
 - No verified awards were found; the three award cards are placeholders.
 - No campaign promises are invented. The Maara section shows the party's stated focus and a placeholder for her own plan.
-- Family and personal details are left out on purpose.
+- Family and personal details (including marital status) and the CV's referees are left out on purpose.
 
 ## Still needed from the office
 
-Portrait and photos, verified awards, contact details (office, email, phone, Facebook link),
-her own plan for Maara, the two quotes still marked as placeholders, and confirmation of the reported figures.
+Portrait and photos, verified awards, the Facebook link, her own plan for Maara,
+the two quotes still marked as placeholders, and confirmation of the press-reported figures.

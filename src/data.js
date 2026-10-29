@@ -1,4 +1,5 @@
 // All page content lives here. Edit this file to update the site.
+// Main source: her CV (14 May 2025). Press figures are marked "as reported".
 // Items with `placeholder: true` are shown with a "to be confirmed" marker.
 
 export const nav = [
@@ -18,7 +19,7 @@ export const hero = {
   last: 'Kananu',
   surname: 'Mwenda',
   lede:
-    'From airport security supervisor to the first woman to lead Nairobi City County. Now seeking to serve the people of Maara, Tharaka Nithi.',
+    'Over 17 years in public and private service, from airport security to the first woman to lead Nairobi City County. Now seeking to serve the people of Maara, Tharaka Nithi.',
   // Put a portrait in /public (for example /public/anne.jpg) and set photo: '/anne.jpg'.
   photo: '',
   photoAlt: 'Portrait of Anne Kananu Mwenda',
@@ -33,54 +34,84 @@ export const hero = {
 
 export const ticker = [
   'First woman Governor of Nairobi',
-  '13 years at Kenya Airports Authority',
-  'Chief Officer, Disaster Management',
-  'Deputy Governor, January 2021',
-  'Sworn in as Governor, 16 November 2021',
+  'Governor, 16 Nov 2021 to 25 Aug 2022',
+  'Signed the Nairobi SGBV Bill into law',
+  '4 fire stations built',
+  'Champion of the Nairobi Risk Hub',
+  '13 years in aviation security at Kenya Airports Authority',
+  'BSc Criminology and Security Management',
   'Seeking the Maara seat, Tharaka Nithi',
 ]
 
-// Figures shown "as reported" in the press.
 export const figures = [
   { value: 1, suffix: 'st', label: 'Woman Governor of Nairobi' },
+  { value: 17, suffix: '+', label: 'Years in public and private service' },
+  { value: 4, label: 'Fire stations built' },
   { value: 590, prefix: 'Sh', suffix: 'M', label: 'Bursaries, as reported' },
-  { value: 24, label: 'Hospitals, with NMS, as reported' },
-  { value: 520, label: 'Teachers, as reported' },
 ]
+export const figuresNote = 'Bursary figure as reported in the press. Other figures from her CV.'
 
 export const about = {
   title: 'A public servant shaped by security, discipline and service',
   paragraphs: [
-    'Anne Kananu Mwenda was born in May 1980 in Embu County. She sat her KCSE in 1999 at Our Lady of Mercy Girls.',
-    'Her career began at Mokir Enterprises and H. Mogambi and Company Advocates, before 13 years at Kenya Airports Authority as a security supervisor.',
-    'She moved to Nairobi City Hall in 2018 as Chief Officer for Disaster Management, became Deputy Governor in January 2021, and on 16 November 2021 was sworn in as Governor, the first woman to hold the office.',
+    'Anne Kananu Mwenda was born on 1 May 1980 in Embu County. She brings a background in criminology and security, and more than 17 years of experience across the public and private sectors.',
+    'For 13 years she served at Kenya Airports Authority as the security officer in charge of quality control and training, checking airport security against ICAO Annex 17 and the national civil aviation security programme, and training airport staff and partner agencies.',
+    'At Nairobi City County she led the Disaster Management and Coordination department, held acting roles for Water, Energy and Sanitation and for Agriculture, and championed the Nairobi Risk Hub to sharpen disaster policy. She became Deputy Governor in January 2021 and served as Governor from 16 November 2021 to 25 August 2022, the first woman in the post.',
   ],
+  values: ['Integrity', 'Self-motivated', 'Team player', 'Works under pressure', 'Clear communicator'],
+  languages: 'English, Swahili',
   education: [
-    { year: '1999', title: 'KCSE', place: 'Our Lady of Mercy Girls' },
-    { year: '2011–2012', title: 'Certificates in HR and Public Relations', place: 'University of Nairobi' },
+    { year: 'From May 2025', title: 'MSc Leadership and Governance (ongoing)', place: 'Jomo Kenyatta University of Agriculture and Technology' },
+    { year: '2014–2016', title: 'BSc Criminology and Security Management', place: 'Dedan Kimathi University. Forensic and Criminal Investigation, Second Class Upper' },
     { year: '2013', title: 'Diploma, Criminology and Security Management', place: "St. Paul's University" },
-    { year: '2016', title: 'BSc', place: 'Dedan Kimathi University of Technology' },
+    { year: '2012', title: 'Certificate in Public Relations', place: 'University of Nairobi' },
+    { year: '2011', title: 'Certificate in Human Resource Management', place: 'University of Nairobi' },
+    { year: '2001–2002', title: 'Computer packages', place: 'AMS College of Banking and Management' },
+    { year: '1996–1999', title: 'KCSE', place: 'Our Lady of Mercy High School, Magundu' },
+  ],
+  training: [
+    { year: '2017', course: 'MANPADS training', org: 'Man Portable Air Defense Systems' },
+    { year: '2017', course: 'Female screening', org: 'US Department of Homeland Security' },
+    { year: '2017', course: 'Incident Command System', org: 'Humanitarian Peace Support School' },
+    { year: '2016', course: 'National Inspectors Course', org: 'ICAO' },
+    { year: '2016', course: 'Active shooter and hostage taking', org: 'Humanitarian Peace Support School' },
+    { year: '2016', course: 'Quality Control in Civil Aviation', org: 'US Department of Homeland Security' },
+    { year: '2015', course: 'Mines and Improvised Explosive Devices', org: 'Humanitarian Peace Support School' },
+    { year: '2013', course: 'ICAO National Instructors Course', org: 'Airports Company South Africa' },
+    { year: '2012', course: 'Basic Wellness Champions', org: 'Kenya HIV/AIDS Business Council' },
+    { year: '2012', course: 'STP 123 Cargo and Mail', org: 'ICAO' },
+    { year: '2011', course: 'Emergency Preparedness and Response', org: 'ICAO' },
+    { year: '2011', course: 'Workplace HIV/AIDS Peer Education', org: 'Kenya HIV/AIDS Business Council' },
+    { year: '2008', course: 'Screener Certification', org: 'ICAO' },
+    { year: '2007', course: 'X-ray and Advanced X-ray Screeners', org: 'UK Department for Transport' },
+    { year: '2007', course: 'Change Management', org: 'Outward Bound Trust Kenya' },
+    { year: '2006', course: 'AVSEC Supervisors Course', org: 'ICAO' },
+    { year: '2005', course: 'Basic Paramilitary, Access Control and Screening', org: 'KWS Field Training School, Manyani' },
   ],
 }
 
 export const journey = [
-  { year: '1980', title: 'Born in Embu County', text: 'Born in May 1980.' },
-  { year: 'Early career', title: 'First jobs', text: 'Mokir Enterprises, then H. Mogambi and Company Advocates.' },
-  { year: '13 years', title: 'Kenya Airports Authority', text: 'Security supervisor.' },
-  { year: 'May 2018', title: 'Chief Officer, Disaster Management', text: 'Nairobi City Hall.' },
-  { year: 'Nov 2019', title: 'Acting Chief Officer, Water', text: 'Took on the water docket in an acting role.' },
-  { year: 'Jan 2021', title: 'Deputy Governor and Acting Governor', text: 'Sworn in as Deputy Governor and led the county in an acting capacity.' },
-  { year: '16 Nov 2021', title: 'Governor of Nairobi', text: 'Sworn in as the first woman Governor of Nairobi City County.' },
+  { year: '1980', title: 'Born in Embu County', text: 'Born on 1 May 1980.' },
+  { year: '2005–2018', title: 'Kenya Airports Authority', text: 'Security officer in charge of quality control and training: audits, inspections, ICAO compliance and security awareness training.' },
+  { year: 'May 2018', title: 'Chief Officer, Disaster Management and Coordination', text: 'Nairobi City County. Built fire stations, recruited fire officers and championed the Nairobi Risk Hub.' },
+  { year: 'Nov 2019', title: 'Acting Chief Officer, Water, Energy and Sanitation', text: 'Held alongside disaster management, as well as an acting role for Agriculture.' },
+  { year: 'Jan 2021', title: 'Deputy Governor and Acting Governor', text: 'Signed the SGBV Bill into law and launched free ECDE funds.' },
+  { year: '16 Nov 2021', title: 'Governor of Nairobi', text: 'Sworn in as the first woman Governor of Nairobi City County. Served until 25 August 2022.' },
+  { year: 'May 2025', title: 'MSc Leadership and Governance', text: 'Began a master’s degree at Jomo Kenyatta University of Agriculture and Technology.' },
   { year: '23 Jul 2026', title: 'Joins NEDP, eyes Maara', text: 'Joined the National Economic Development Party and said she will seek the Maara seat in Tharaka Nithi, subject to party primaries.' },
 ]
 
+// source: 'cv' = from her CV; 'press' = as reported in the press.
 export const record = [
-  { tag: 'Education', title: 'Bursaries and teachers', text: 'Sh590M in bursaries and 520 teachers, as reported.' },
-  { tag: 'Health', title: 'Hospitals', text: '24 hospitals delivered alongside Nairobi Metropolitan Services, as reported.' },
-  { tag: 'Finance', title: 'Pending bills', text: 'Ksh1.3bn in pending bills handed to NMS for settlement, as reported.' },
-  { tag: 'Land', title: 'Land crackdown', text: 'Action against grabbing of public land, as reported.' },
-  { tag: 'Safety', title: 'Fire stations and safe houses', text: 'Fire stations and Mji wa Huruma safe houses.', planned: true },
-  { tag: 'Region', title: 'CEREB', text: 'Joined Central Region Economic Bloc governors at a meeting hosted by the British High Commissioner.' },
+  { tag: 'Safety', title: 'Fire stations', text: 'Built four fire stations to cut response times, and recruited fire officers and county security constables.', source: 'cv' },
+  { tag: 'Safety', title: 'Nairobi Risk Hub', text: 'Championed the Risk Hub to refine disaster management policy, with risk assessments and emergency response plans.', source: 'cv' },
+  { tag: 'Justice', title: 'SGBV law', text: 'Signed the Sexual and Gender Based Violence Bill into law to speed up efforts to end gender-based violence in Nairobi.', source: 'cv' },
+  { tag: 'Education', title: 'Free ECDE and bursaries', text: 'Launched free ECDE funds. Sh590M in bursaries and 520 teachers, as reported. New classrooms and learning materials.', source: 'cv' },
+  { tag: 'Transport', title: 'Green Park Terminus', text: 'Launched the NMS Green Park Bus Terminus to ease traffic congestion in the city.', source: 'cv' },
+  { tag: 'Health', title: 'Hospitals', text: 'Equipped hospitals and added health workers. 24 hospitals delivered with NMS, as reported.', source: 'cv' },
+  { tag: 'City services', title: 'Roads, water and waste', text: 'Better garbage collection, rehabilitated and new roads, and new boreholes and repaired water pipes.', source: 'cv' },
+  { tag: 'Finance', title: 'Pending bills', text: 'Ksh1.3bn in pending bills handed to NMS for settlement.', source: 'press' },
+  { tag: 'Region', title: 'CEREB', text: 'Joined Central Region Economic Bloc governors at a meeting hosted by the British High Commissioner.', source: 'press' },
 ]
 
 // No verified awards were found. Replace these with confirmed awards.
@@ -149,9 +180,9 @@ export const news = [
 
 export const contact = {
   items: [
-    { label: 'Office', value: 'Office address to be confirmed', placeholder: true },
-    { label: 'Email', value: 'Email to be confirmed', placeholder: true },
-    { label: 'Phone', value: 'Phone to be confirmed', placeholder: true },
+    { label: 'Postal address', value: 'P.O. Box 798-00200, Nairobi' },
+    { label: 'Email', value: 'kananumwenda@yahoo.com', href: 'mailto:kananumwenda@yahoo.com' },
+    { label: 'Phone', value: '+254 721 456 033', href: 'tel:+254721456033' },
     // Set href to her Facebook page link and remove `placeholder`.
     { label: 'Facebook', value: 'Facebook page link to be added', href: '', placeholder: true },
   ],

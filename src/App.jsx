@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import config from '../site.config.js'
 import {
-  nav, hero, ticker, figures, about, journey, record, awards,
+  nav, hero, ticker, figures, figuresNote, about, journey, record, awards,
   quotes, maara, gallery, news, contact,
 } from './data.js'
 import { useInView, useReducedMotion, useRevealAll, useScrollProgress } from './motion.js'
@@ -225,7 +225,7 @@ function Figures() {
           </div>
         ))}
       </div>
-      <p className="wrap fig-note">Figures as reported in the press.</p>
+      <p className="wrap fig-note">{figuresNote}</p>
     </section>
   )
 }
@@ -238,6 +238,10 @@ function About() {
         <div>
           <SectionHead kicker="About" title={about.title} />
           {about.paragraphs.map((p, i) => <p key={i} data-reveal>{p}</p>)}
+          <ul className="values" data-reveal aria-label="Personal attributes">
+            {about.values.map((v) => <li key={v}>{v}</li>)}
+          </ul>
+          <p className="langs" data-reveal><strong>Languages:</strong> {about.languages}</p>
         </div>
         <aside className="edu" data-reveal>
           <h3>Education</h3>
@@ -251,6 +255,18 @@ function About() {
             ))}
           </ol>
         </aside>
+      </div>
+      <div className="wrap training" data-reveal>
+        <h3>Professional training</h3>
+        <ul>
+          {about.training.map((t) => (
+            <li key={t.year + t.course}>
+              <span className="tr-year">{t.year}</span>
+              <span className="tr-course">{t.course}</span>
+              <span className="tr-org">{t.org}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
@@ -312,6 +328,7 @@ function Record() {
               {r.planned && <span className="planned">Planned</span>}
               <h3>{r.title}</h3>
               <p>{r.text}</p>
+              <span className="src">{r.source === 'press' ? 'As reported' : 'From her CV'}</span>
             </TiltCard>
           ))}
         </div>
@@ -500,7 +517,9 @@ function Contact() {
             <div key={c.label} data-reveal>
               <dt>{c.label}</dt>
               <dd>
-                {c.href ? <a href={c.href} target="_blank" rel="noopener noreferrer">{c.value}</a> : c.value}
+                {c.href ? (
+                  <a href={c.href} {...(c.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{c.value}</a>
+                ) : c.value}
                 {c.placeholder && <Tbc />}
               </dd>
             </div>
