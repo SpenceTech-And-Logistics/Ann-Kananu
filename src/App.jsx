@@ -20,7 +20,42 @@ function SectionHead({ kicker, title, light }) {
 }
 
 /* ---------- Header ---------- */
+// Returns the id of the section currently under the header, or '' at the top.
+function useActiveSection(ids) {
+  const [active, setActive] = useState('')
+  useEffect(() => {
+    let raf = 0
+    const check = () => {
+      raf = 0
+      const line = window.innerHeight * 0.35
+      let current = ''
+      for (const id of ids) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top <= line) current = id
+      }
+      // At the very bottom, the last section counts as active.
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        current = ids[ids.length - 1]
+      }
+      setActive(current)
+    }
+    const on = () => { if (!raf) raf = requestAnimationFrame(check) }
+    check()
+    window.addEventListener('scroll', on, { passive: true })
+    window.addEventListener('resize', on)
+    return () => {
+      window.removeEventListener('scroll', on)
+      window.removeEventListener('resize', on)
+      if (raf) cancelAnimationFrame(raf)
+    }
+  }, [ids])
+  return active
+}
+
+const navIds = nav.map((n) => n.id)
+
 function Header() {
+  const active = useActiveSection(navIds)
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
@@ -46,7 +81,15 @@ function Header() {
       </button>
       <nav id="site-nav" className={open ? 'open' : ''}>
         {nav.map((n) => (
-          <a key={n.id} href={`#${n.id}`} onClick={() => setOpen(false)}>{n.label}</a>
+          <a
+            key={n.id}
+            href={`#${n.id}`}
+            className={active === n.id ? 'active' : undefined}
+            aria-current={active === n.id ? 'location' : undefined}
+            onClick={() => setOpen(false)}
+          >
+            {n.label}
+          </a>
         ))}
       </nav>
     </header>
