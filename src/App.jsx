@@ -2,8 +2,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import config from '../site.config.js'
 import {
   nav, hero, ticker, figures, figuresNote, about, journey, record, awards,
-  quotes, maara, gallery, news, contact,
+  quotes, maara, gallery, news, contact, social,
 } from './data.js'
+import SocialIcon from './SocialIcon.jsx'
 import { useInView, useReducedMotion, useRevealAll, useScrollProgress } from './motion.js'
 
 function Tbc() {
@@ -534,6 +535,20 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="wrap foot">
+        <ul className="social" aria-label="Social links">
+          {social.filter((s) => s.url).map((s) => (
+            <li key={s.icon}>
+              <a
+                href={s.url}
+                aria-label={s.label}
+                title={s.label}
+                {...(s.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                <SocialIcon name={s.icon} />
+              </a>
+            </li>
+          ))}
+        </ul>
         <span>© {new Date().getFullYear()} {config.siteName}</span>
         <a href={config.builtByUrl} target="_blank" rel="noopener noreferrer">{config.builtBy}</a>
       </div>

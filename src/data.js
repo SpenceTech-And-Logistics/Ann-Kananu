@@ -183,7 +183,20 @@ export const contact = {
     { label: 'Postal address', value: 'P.O. Box 798-00200, Nairobi' },
     { label: 'Email', value: 'kananumwenda@yahoo.com', href: 'mailto:kananumwenda@yahoo.com' },
     { label: 'Phone', value: '+254 721 456 033', href: 'tel:+254721456033' },
-    // Set href to her Facebook page link and remove `placeholder`.
-    { label: 'Facebook', value: 'Facebook page link to be added', href: '', placeholder: true },
+    { label: 'Facebook', value: 'Anne Kananu Mwenda', href: 'https://www.facebook.com/p/Anne-Kananu-Mwenda-100072647281930/' },
   ],
 }
+
+// Footer icons. Fill in a url to show more (x, instagram, youtube, tiktok, linkedin, whatsapp).
+// Entries with an empty url are hidden.
+export const social = [
+  { icon: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/p/Anne-Kananu-Mwenda-100072647281930/' },
+  { icon: 'x', label: 'X (Twitter)', url: '' },
+  { icon: 'instagram', label: 'Instagram', url: '' },
+  { icon: 'youtube', label: 'YouTube', url: '' },
+  { icon: 'tiktok', label: 'TikTok', url: '' },
+  { icon: 'linkedin', label: 'LinkedIn', url: '' },
+  { icon: 'whatsapp', label: 'WhatsApp', url: '' },
+  { icon: 'email', label: 'Email', url: 'mailto:kananumwenda@yahoo.com' },
+  { icon: 'phone', label: 'Phone', url: 'tel:+254721456033' },
+]
