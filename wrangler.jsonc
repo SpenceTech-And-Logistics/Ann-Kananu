@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static assets deployment for the Anne Kananu site.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ann-kananu",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Every unknown path falls back to index.html (single-page app).
+    "not_found_handling": "single-page-application"
+  }
+}
