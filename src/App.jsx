@@ -100,7 +100,8 @@ function Header() {
 /* ---------- Hero ---------- */
 function SplitWord({ word, delay = 0 }) {
   return (
-    <span className="split" aria-label={word}>
+    <span className="split">
+      <span className="sr-only">{word}</span>
       {[...word].map((ch, i) => (
         <span key={i} aria-hidden="true" style={{ '--d': `${delay + i * 55}ms` }}>{ch}</span>
       ))}

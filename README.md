@@ -19,11 +19,13 @@ npm run build
 npx wrangler deploy
 ```
 
-`wrangler.jsonc` serves `dist/` and falls back to `index.html` for every route.
+`wrangler.jsonc` runs `npm run build` first, then serves `dist/` and falls back to `index.html` for every route.
+The build pre-renders the page to HTML and writes `sitemap.xml` and `robots.txt`.
 
 ## Editing content
 
-All page text lives in `src/data.js`. Site-wide settings (name, footer credit) are in `site.config.js`.
+All page text lives in `src/data.js`. Site-wide settings (name, live address, footer credit) are in `site.config.js`.
+Search and sharing settings are in `src/seo.js`; see `SEO.md` for the full SEO record, to-do list and change log.
 
 - **Hero portrait:** `public/anne-kananu.jpg`, set in `hero.photo`. To change it, replace the file.
   The photo sits in a leaf-shaped frame (two opposite corners rounded wide, two tight). Change the shape with `--leaf` in `src/styles.css`.

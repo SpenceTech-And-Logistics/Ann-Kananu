@@ -88,7 +88,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; mar
 .hero-kicker { color: var(--saffron); }
 .hero h1 { font-size: clamp(52px, 8.4vw, 112px); letter-spacing: -.01em; }
 .split { display: inline-block; white-space: nowrap; }
-.split > span { display: inline-block; opacity: 0; transform: translateY(.5em) rotate(6deg); animation: letter .8s var(--ease) forwards; animation-delay: var(--d); }
+.split > span[aria-hidden] { display: inline-block; opacity: 0; transform: translateY(.5em) rotate(6deg); animation: letter .8s var(--ease) forwards; animation-delay: var(--d); }
 @keyframes letter { to { opacity: 1; transform: none; } }
 .surname { display: block; font-family: var(--sans); font-weight: 300; font-size: .32em; letter-spacing: .36em; text-transform: uppercase; color: var(--saffron); margin-top: 10px; opacity: 0; animation: fade .9s 1s forwards; }
 @keyframes fade { to { opacity: 1; } }
@@ -318,6 +318,6 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; mar
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  [data-reveal], .split > span, .surname, .lightbox { opacity: 1 !important; transform: none !important; }
+  [data-reveal], .split > span[aria-hidden], .surname, .lightbox { opacity: 1 !important; transform: none !important; }
   .tl-fill { height: 100%; }
 }
