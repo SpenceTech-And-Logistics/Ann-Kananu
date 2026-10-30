@@ -25,9 +25,9 @@ npx wrangler deploy
 
 All page text lives in `src/data.js`. Site-wide settings (name, footer credit) are in `site.config.js`.
 
-- **Hero portrait:** put the file in `public/` (for example `public/anne.jpg`) and set `hero.photo: '/anne.jpg'`.
+- **Hero portrait:** `public/anne-kananu.jpg`, set in `hero.photo`. To change it, replace the file.
   The photo sits in a leaf-shaped frame (two opposite corners rounded wide, two tight). Change the shape with `--leaf` in `src/styles.css`.
-- **Gallery:** put photos in `public/gallery/` and set each `src` and `caption`.
+- **Gallery:** 16 photos in `public/gallery/` (`NN.jpg` full size, `NN-thumb.jpg` for the grid). Captions and tile shapes are in the `photos` list in `src/data.js`.
 - **Awards, quotes, Maara plan, contact details, Facebook link:** entries marked `placeholder: true` show a "To be confirmed" tag. Replace the text and remove the flag.
 
 ## Sections
@@ -50,5 +50,5 @@ All motion is switched off for visitors who prefer reduced motion.
 
 ## Still needed from the office
 
-Portrait and photos, verified awards, her own plan for Maara,
+Verified awards, her own plan for Maara,
 the two quotes still marked as placeholders, and confirmation of the press-reported figures.

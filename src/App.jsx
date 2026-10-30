@@ -450,14 +450,21 @@ function Gallery() {
     return () => window.removeEventListener('keydown', key)
   }, [open])
   const g = open >= 0 ? gallery[open] : null
+  const step = (d) => setOpen((o) => (o + d + gallery.length) % gallery.length)
   return (
     <section id="gallery" className="section gallery">
       <div className="wrap">
         <SectionHead kicker="Gallery" title="In pictures" />
         <div className="g-grid">
           {gallery.map((p, i) => (
-            <button key={i} className={`g-item g${i + 1}`} onClick={() => setOpen(i)} data-reveal>
-              {p.src ? <img src={p.src} alt={p.caption} loading="lazy" /> : <span className="g-ph">{i + 1}</span>}
+            <button
+              key={i}
+              className={`g-item${p.size ? ` ${p.size}` : ''}`}
+              onClick={() => setOpen(i)}
+              aria-label={`Open photo: ${p.caption}`}
+              data-reveal
+            >
+              {p.src ? <img src={p.thumb || p.src} alt={p.caption} loading="lazy" decoding="async" /> : <span className="g-ph">{i + 1}</span>}
               <span className="g-cap">{p.caption}</span>
             </button>
           ))}
@@ -467,8 +474,10 @@ function Gallery() {
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={g.caption} onClick={close}>
           <figure onClick={(e) => e.stopPropagation()}>
             {g.src ? <img src={g.src} alt={g.caption} /> : <div className="lb-ph">{open + 1}</div>}
-            <figcaption>{g.caption}</figcaption>
+            <figcaption>{g.caption} <span className="lb-count">{open + 1} / {gallery.length}</span></figcaption>
           </figure>
+          <button className="lb-nav prev" onClick={(e) => { e.stopPropagation(); step(-1) }} aria-label="Previous photo">‹</button>
+          <button className="lb-nav next" onClick={(e) => { e.stopPropagation(); step(1) }} aria-label="Next photo">›</button>
           <button className="lb-close" onClick={close} aria-label="Close">×</button>
         </div>
       )}

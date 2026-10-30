@@ -20,8 +20,8 @@ export const hero = {
   surname: 'Mwenda',
   lede:
     'Over 17 years in public and private service, from airport security to the first woman to lead Nairobi City County. Now seeking to serve the people of Maara, Tharaka Nithi.',
-  // Put a portrait in /public (for example /public/anne.jpg) and set photo: '/anne.jpg'.
-  photo: '',
+  // Portrait file lives in /public.
+  photo: '/anne-kananu.jpg',
   photoAlt: 'Portrait of Anne Kananu Mwenda',
   badges: ['First woman Governor', 'Nairobi', 'Maara 2027'],
   strip: 'Nairobi ✦ Maara',
@@ -138,11 +138,30 @@ export const maara = {
   },
 }
 
-// Replace with real photos placed in /public, e.g. { src: '/gallery/1.jpg', caption: '...' }.
-export const gallery = Array.from({ length: 6 }, (_, i) => ({
-  src: '',
-  caption: `Photo ${i + 1}, to be supplied`,
-}))
+// Photos live in /public/gallery as NN.jpg (full size) and NN-thumb.jpg (grid).
+// `size` sets the tile shape: 'big' (2×2), 'wide' (2×1), 'tall' (1×2) or '' (1×1).
+const photos = [
+  ['Sharing food hampers with elderly residents', 'big'],
+  ['Addressing families at a food distribution', 'tall'],
+  ['Blankets and supplies laid out for distribution', 'wide'],
+  ['A warm moment with an elderly resident', ''],
+  ['Meeting residents on a community site visit', ''],
+  ['Visiting pupils in hospital', 'tall'],
+  ['Handing over a hamper of food and essentials', ''],
+  ['Volunteers preparing blankets and flour', 'wide'],
+  ['Greeting elderly residents at the hamper drive', ''],
+  ['Walking the neighbourhood with local leaders', ''],
+  ['Handing a hamper to an elderly resident', ''],
+  ['Food hampers ready for families', 'tall'],
+  ['Listening to an elderly resident', 'wide'],
+  ['Checking on pupils recovering in hospital', 'tall'],
+  ['Sharing a laugh at the hamper drive', 'wide'],
+  ['With an elderly resident at the distribution', 'wide'],
+]
+export const gallery = photos.map(([caption, size], i) => {
+  const n = String(i + 1).padStart(2, '0')
+  return { src: `/gallery/${n}.jpg`, thumb: `/gallery/${n}-thumb.jpg`, caption, size }
+})
 
 export const news = [
   {
