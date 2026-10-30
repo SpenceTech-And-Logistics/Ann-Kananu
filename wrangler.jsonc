@@ -3,6 +3,10 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ann-kananu",
   "compatibility_date": "2026-10-01",
+  // Build the site before every deploy, so `npx wrangler deploy` works on its own.
+  "build": {
+    "command": "npm run build"
+  },
   "assets": {
     "directory": "./dist",
     // Every unknown path falls back to index.html (single-page app).
