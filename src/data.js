@@ -90,15 +90,15 @@ export const about = {
   ],
 }
 
+// Newest first.
 export const journey = [
-  { year: '1980', title: 'Born in Embu County', text: 'Born on 1 May 1980.' },
-  { year: '2005–2018', title: 'Kenya Airports Authority', text: 'Security officer in charge of quality control and training: audits, inspections, ICAO compliance and security awareness training.' },
-  { year: 'May 2018', title: 'Chief Officer, Disaster Management and Coordination', text: 'Nairobi City County. Built fire stations, recruited fire officers and championed the Nairobi Risk Hub.' },
-  { year: 'Nov 2019', title: 'Acting Chief Officer, Water, Energy and Sanitation', text: 'Held alongside disaster management, as well as an acting role for Agriculture.' },
-  { year: 'Jan 2021', title: 'Deputy Governor and Acting Governor', text: 'Signed the SGBV Bill into law and launched free ECDE funds.' },
-  { year: '16 Nov 2021', title: 'Governor of Nairobi', text: 'Sworn in as the first woman Governor of Nairobi City County. Served until 25 August 2022.' },
-  { year: 'May 2025', title: 'MSc Leadership and Governance', text: 'Began a master’s degree at Jomo Kenyatta University of Agriculture and Technology.' },
   { year: '23 Jul 2026', title: 'Joins NEDP, eyes Maara', text: 'Joined the National Economic Development Party and said she will seek the Maara seat in Tharaka Nithi, subject to party primaries.' },
+  { year: 'May 2025', title: 'MSc Leadership and Governance', text: 'Began a master’s degree at Jomo Kenyatta University of Agriculture and Technology.' },
+  { year: '16 Nov 2021', title: 'Governor of Nairobi', text: 'Sworn in as the first woman Governor of Nairobi City County. Served until 25 August 2022.' },
+  { year: 'Jan 2021', title: 'Deputy Governor and Acting Governor', text: 'Signed the SGBV Bill into law and launched free ECDE funds.' },
+  { year: 'Nov 2019', title: 'Acting Chief Officer, Water, Energy and Sanitation', text: 'Held alongside disaster management, as well as an acting role for Agriculture.' },
+  { year: 'May 2018', title: 'Chief Officer, Disaster Management and Coordination', text: 'Nairobi City County. Built fire stations, recruited fire officers and championed the Nairobi Risk Hub.' },
+  { year: '2005–2018', title: 'Kenya Airports Authority', text: 'Security officer in charge of quality control and training: audits, inspections, ICAO compliance and security awareness training.' },
 ]
 
 export const record = [
