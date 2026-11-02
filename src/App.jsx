@@ -492,24 +492,37 @@ function News() {
     <section id="news" className="section news">
       <div className="wrap">
         <SectionHead kicker="In the news" title="Coverage" />
-        <ul className="news-list">
-          {news.map((n) => (
-            <li key={n.title} data-reveal>
-              {n.url ? (
-                <a href={n.url} target="_blank" rel="noopener noreferrer">
-                  <span className="outlet">{n.outlet}</span>
+        <ul className="news-grid">
+          {news.map((n) => {
+            const body = (
+              <>
+                <span className="n-photo">
+                  {n.photo && <img src={n.photo} alt={n.photoAlt || ''} loading="lazy" decoding="async" />}
+                </span>
+                <span className="n-body">
+                  <span className="n-meta">
+                    <span className="outlet">{n.outlet}</span>
+                    {n.date && <span className="n-date">{n.date}</span>}
+                  </span>
                   <span className="n-title">{n.title}</span>
-                  <span className="arrow" aria-hidden="true">↗</span>
-                </a>
-              ) : (
-                <div className="no-link">
-                  <span className="outlet">{n.outlet}</span>
-                  <span className="n-title">{n.title}</span>
-                  <span className="tbc">Link to be added</span>
-                </div>
-              )}
-            </li>
-          ))}
+                  {n.url ? (
+                    <span className="n-read">Read the story <span aria-hidden="true">↗</span></span>
+                  ) : (
+                    <span className="tbc">Link to be added</span>
+                  )}
+                </span>
+              </>
+            )
+            return (
+              <li key={n.title} data-reveal>
+                {n.url ? (
+                  <a className="n-card" href={n.url} target="_blank" rel="noopener noreferrer">{body}</a>
+                ) : (
+                  <div className="n-card">{body}</div>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </section>

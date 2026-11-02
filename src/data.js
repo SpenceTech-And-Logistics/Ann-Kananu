@@ -163,44 +163,61 @@ export const gallery = photos.map(([caption, size], i) => {
   return { src: `/gallery/${n}.jpg`, thumb: `/gallery/${n}-thumb.jpg`, caption, size }
 })
 
+// Newest first. `photo` is one of her own photos from /public/gallery (thumbnail size),
+// not the outlet's picture. `date` is optional; leave it '' when unknown.
 export const news = [
   {
-    outlet: 'The Standard, Evewoman',
-    title: "Meet Nairobi's first female governor",
-    url: 'https://standardmedia.co.ke/evewoman/achieving-woman/article/2001429341/ann-kananu-meet-nairobis-first-female-governor',
+    outlet: 'The Star',
+    date: '23 Jul 2026',
+    title: 'Kananu leaves UDA for NEDP and sets her sights on Maara',
+    url: 'https://www.the-star.co.ke/counties/eastern/2026-07-23-ex-nairobi-governor-kananu-defects-ditches-uda-joins-sonkos-nedp',
+    photo: '/gallery/09-thumb.jpg',
+    photoAlt: 'Anne Kananu greeting elderly residents',
+  },
+  {
+    outlet: 'Citizen Digital',
+    date: 'Jul 2026',
+    title: 'A new party and a new seat: her bid for Maara',
+    url: 'https://citizen.digital/article/ex-nairobi-governor-anne-kananu-joins-sonkos-nedp-as-she-eyes-maara-mp-seat-n386969',
+    photo: '/gallery/15-thumb.jpg',
+    photoAlt: 'Anne Kananu sharing a laugh with an elderly resident',
   },
   {
     outlet: 'The Star',
-    title: 'Anne Kananu sworn in as new Nairobi governor',
+    date: '16 Nov 2021',
+    title: "Sworn in as Nairobi's first woman governor",
     url: 'https://www.the-star.co.ke/news/2021-11-16-anne-kananu-sworn-in-as-new-nairobi-governor/',
+    photo: '/gallery/10-thumb.jpg',
+    photoAlt: 'Anne Kananu walking with local leaders',
+  },
+  {
+    outlet: 'The Standard, Evewoman',
+    date: '',
+    title: 'Meet the woman who made history at City Hall',
+    url: 'https://standardmedia.co.ke/evewoman/achieving-woman/article/2001429341/ann-kananu-meet-nairobis-first-female-governor',
+    photo: '/gallery/04-thumb.jpg',
+    photoAlt: 'Anne Kananu with an elderly resident',
   },
   {
     outlet: 'Nairobi City County',
-    title: 'Kananu joins CEREB county heads hosted by the British High Commissioner',
+    date: '',
+    title: 'At the table with Central Region governors and the UK High Commissioner',
     url: 'https://nairobi.go.ke/nairobi-deputy-governor-acting-governor-ann-kananu-mwenda-joins-ten-county-heads-hosted-british-high-commissioner-kenya-ms-jane-marriott-central-region-economic-bloc-cereb-governo',
+    photo: '/gallery/05-thumb.jpg',
+    photoAlt: 'Anne Kananu meeting residents on a site visit',
   },
   {
     outlet: 'Kenyans.co.ke',
-    title: 'Profile: Anne Kananu',
+    date: '',
+    title: 'Her career in public service at a glance',
     url: 'https://www.kenyans.co.ke/politician/anne-kananu',
-  },
-  {
-    outlet: 'Wikipedia',
-    title: 'Anne Kananu',
-    url: 'https://en.wikipedia.org/wiki/Anne_Kananu',
-  },
-  {
-    outlet: 'The Star, 23 Jul 2026',
-    title: 'Kananu joins NEDP, eyes Maara seat',
-    url: '',
+    photo: '/gallery/07-thumb.jpg',
+    photoAlt: 'Anne Kananu handing over a hamper',
   },
 ]
 
 export const contact = {
   items: [
-    { label: 'Postal address', value: 'P.O. Box 798-00200, Nairobi' },
-    { label: 'Email', value: 'kananumwenda@yahoo.com', href: 'mailto:kananumwenda@yahoo.com' },
-    { label: 'Phone', value: '+254 721 456 033', href: 'tel:+254721456033' },
     { label: 'Facebook', value: 'Anne Kananu Mwenda', href: 'https://www.facebook.com/p/Anne-Kananu-Mwenda-100072647281930/' },
   ],
 }
@@ -215,6 +232,4 @@ export const social = [
   { icon: 'tiktok', label: 'TikTok', url: '' },
   { icon: 'linkedin', label: 'LinkedIn', url: '' },
   { icon: 'whatsapp', label: 'WhatsApp', url: '' },
-  { icon: 'email', label: 'Email', url: 'mailto:kananumwenda@yahoo.com' },
-  { icon: 'phone', label: 'Phone', url: 'tel:+254721456033' },
 ]

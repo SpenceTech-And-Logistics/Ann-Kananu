@@ -57,5 +57,6 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maar
 
 | Date | Change |
 | --- | --- |
+| 2026-11-02 | News section rebuilt as photo cards (her own photos, with alt text), titles reworded, dates added, newest first. The Star (23 Jul 2026) link added; Citizen Digital story added; Wikipedia moved out of News (still in `sameAs`). Postal address, email and phone removed from Contact and footer. |
 | 2026-11-02 | Journey timeline reordered newest first; "Born in Embu County" entry removed. No change to tags or structured data (birthplace kept in Person data). |
 | 2026-10-30 | Initial SEO setup: titles and descriptions, Open Graph and X cards, share image, JSON-LD (WebSite, ProfilePage, Person), pre-rendered HTML, sitemap with image entries, robots.txt, icons and manifest, screen-reader-safe animated heading. |
