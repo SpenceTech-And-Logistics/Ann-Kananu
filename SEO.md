@@ -6,7 +6,6 @@ Living record of the site's search and sharing setup. Update the **Change log** 
 
 | What | File |
 | --- | --- |
-| 2026-11-05 | News: The Star (23 Jul 2026) article removed; photos removed from news cards (her photos are for the gallery only). Live address confirmed. |
 | Site address (used in every absolute link) | `site.config.js` → `siteUrl` |
 | Page title, description, share title, share image, other name spellings | `src/seo.js` → `seo` |
 | Structured data about her (Google "knowledge" facts) | `src/seo.js` → `structuredData()` |
@@ -58,6 +57,7 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maar
 
 | Date | Change |
 | --- | --- |
+| 2026-11-05 | News: The Star (23 Jul 2026) article removed; photos removed from news cards (her photos are for the gallery only). Live address confirmed. |
 | 2026-11-02 | News section rebuilt as photo cards (her own photos, with alt text), titles reworded, dates added, newest first. The Star (23 Jul 2026) link added; Citizen Digital story added; Wikipedia moved out of News (still in `sameAs`). Postal address, email and phone removed from Contact and footer. |
 | 2026-11-02 | Journey timeline reordered newest first; "Born in Embu County" entry removed. No change to tags or structured data (birthplace kept in Person data). |
 | 2026-10-30 | Initial SEO setup: titles and descriptions, Open Graph and X cards, share image, JSON-LD (WebSite, ProfilePage, Person), pre-rendered HTML, sitemap with image entries, robots.txt, icons and manifest, screen-reader-safe animated heading. |
