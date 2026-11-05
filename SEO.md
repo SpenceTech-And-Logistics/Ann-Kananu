@@ -23,7 +23,7 @@ Most SEO text is built from `src/data.js`, so content edits there flow into the 
 - **Pre-rendering:** the full page text is in the HTML, so Google, Bing, WhatsApp, Facebook and X see it without running JavaScript.
 - **Canonical URL**, `robots` meta (index, follow, large image previews), `lang="en-KE"`.
 - **Open Graph and X (Twitter) cards:** profile type, 1200 × 630 share image with alt text.
-- **Structured data (JSON-LD):** `WebSite`, `ProfilePage` and `Person` with roles and dates, education, languages, birthplace, party (NEDP), and `sameAs` links (Facebook, Wikipedia).
+- **Structured data (JSON-LD):** `WebSite`, `ProfilePage` and `Person` with roles and dates, education, languages, birthplace, party (UDA), and `sameAs` links (Facebook, Wikipedia).
 - **Alternate spellings** in structured data: Ann Kananu, Anne Kananu, Ann Kananu Mwenda, Governor Kananu.
 - **Sitemap** with the portrait and all 16 gallery photos as image entries; **robots.txt** pointing to it.
 - **Images:** descriptive alt text on the portrait and every gallery photo; portrait preloaded for a faster first paint; gallery thumbnails lazy-loaded.
@@ -32,7 +32,7 @@ Most SEO text is built from `src/data.js`, so content edits there flow into the 
 ## Target searches
 
 Primary: *Anne Kananu*, *Ann Kananu*, *Anne Kananu Mwenda*, *Kananu Maara*, *Maara MP candidate 2027*.
-Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maara*, *Tharaka Nithi Maara aspirant*.
+Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *UDA Maara*, *Tharaka Nithi Maara aspirant*.
 
 ## To do
 
@@ -57,6 +57,7 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maar
 
 | Date | Change |
 | --- | --- |
+| 2026-11-05 | Party corrected from NEDP to UDA in the Journey card, Maara section and Person `memberOf`; Maara chips heading now "Areas of focus". Target search updated to *UDA Maara*. |
 | 2026-11-05 | About: birth paragraph removed; KAA and Nairobi City County paragraphs merged into the lead bio (one paragraph, also the Person `description`). |
 | 2026-11-05 | About: new lead bio paragraph (first woman and third Governor of Nairobi, KAA background). Same text now used as the Person `description` in structured data. |
 | 2026-11-05 | News: The Star (23 Jul 2026) article removed; photos removed from news cards (her photos are for the gallery only). Live address confirmed. |

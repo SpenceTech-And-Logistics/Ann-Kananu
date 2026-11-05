@@ -47,7 +47,7 @@ All motion is switched off for visitors who prefer reduced motion.
 - The bursary, teacher, hospital and pending-bill figures are as reported in the press.
 - The constituency is spelt Maara (Citizen, Capital FM); The Star used "Mara".
 - No verified awards were found; the three award cards are placeholders.
-- No campaign promises are invented. The Maara section shows the party's stated focus and a placeholder for her own plan.
+- No campaign promises are invented. The Maara section shows areas of focus and a placeholder for her own plan.
 - Family and personal details (including marital status) and the CV's referees are left out on purpose.
 
 ## Still needed from the office

@@ -53,7 +53,7 @@ export function structuredData() {
       { '@type': 'Occupation', name: 'Chief Officer, Disaster Management and Coordination, Nairobi City County', description: 'May 2018 to January 2021' },
       { '@type': 'Occupation', name: 'Security Officer, Quality Control and Training, Kenya Airports Authority', description: '2005 to 2018' },
     ],
-    memberOf: { '@type': 'PoliticalParty', name: 'National Economic Development Party (NEDP)' },
+    memberOf: { '@type': 'PoliticalParty', name: 'United Democratic Alliance (UDA)' },
     sameAs: [facebook, 'https://en.wikipedia.org/wiki/Anne_Kananu'].filter(Boolean),
   }
   return {

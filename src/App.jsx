@@ -422,7 +422,7 @@ function Maara() {
         <div>
           <SectionHead kicker="Maara 2027" title={maara.title} light />
           <p data-reveal>{maara.intro}</p>
-          <h3 className="focus-h" data-reveal>The party's stated focus</h3>
+          <h3 className="focus-h" data-reveal>Areas of focus</h3>
           <ul className="chips" data-reveal>
             {maara.partyFocus.map((f) => <li key={f}>{f}</li>)}
           </ul>
