@@ -55,12 +55,9 @@ export const about = {
   title: 'A public servant shaped by security, discipline and service',
   // Lead paragraph, shown first in larger type. Also used as her description for search engines.
   intro:
-    'Ann Kananu Mwenda is a Kenyan public administrator and former Governor of Nairobi City County, recognised as the first woman to hold the office. She served as Nairobi’s third Governor from November 2021 to August 2022, having previously served as Deputy Governor and Chief Officer for Disaster Management and Coordination. Her professional background includes 13 years at the Kenya Airports Authority, where she worked as a Security Supervisor responsible for quality control and training. Her career spans county leadership, public administration, security management and emergency coordination, marking a significant milestone for women’s representation in Kenya’s capital.',
-  paragraphs: [
-    'Anne Kananu Mwenda was born on 1 May 1980 in Embu County. She brings a background in criminology and security, and more than 17 years of experience across the public and private sectors.',
-    'For 13 years she served at Kenya Airports Authority as the security officer in charge of quality control and training, checking airport security against ICAO Annex 17 and the national civil aviation security programme, and training airport staff and partner agencies.',
-    'At Nairobi City County she led the Disaster Management and Coordination department, held acting roles for Water, Energy and Sanitation and for Agriculture, and championed the Nairobi Risk Hub to sharpen disaster policy. She became Deputy Governor in January 2021 and served as Governor from 16 November 2021 to 25 August 2022, the first woman in the post.',
-  ],
+    'Ann Kananu Mwenda is a Kenyan public administrator and former Governor of Nairobi City County, recognised as the first woman to hold the office. She served as Nairobi’s third Governor from 16 November 2021 to 25 August 2022, having previously served as Deputy Governor from January 2021 and as Chief Officer for Disaster Management and Coordination, where she championed the Nairobi Risk Hub to sharpen disaster policy and also held acting roles for Water, Energy and Sanitation and for Agriculture. Her professional background includes 13 years at the Kenya Airports Authority, where she worked as a Security Supervisor responsible for quality control and training, checking airport security against ICAO Annex 17 and the national civil aviation security programme, and training airport staff and partner agencies. Her career spans county leadership, public administration, security management and emergency coordination, marking a significant milestone for women’s representation in Kenya’s capital.',
+  // Extra paragraphs after the lead, in normal type. Leave empty for none.
+  paragraphs: [],
   values: ['Integrity', 'Self-motivated', 'Team player', 'Works under pressure', 'Clear communicator'],
   languages: 'English, Swahili',
   education: [

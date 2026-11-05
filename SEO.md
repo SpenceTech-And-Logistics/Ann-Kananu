@@ -57,6 +57,7 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maar
 
 | Date | Change |
 | --- | --- |
+| 2026-11-05 | About: birth paragraph removed; KAA and Nairobi City County paragraphs merged into the lead bio (one paragraph, also the Person `description`). |
 | 2026-11-05 | About: new lead bio paragraph (first woman and third Governor of Nairobi, KAA background). Same text now used as the Person `description` in structured data. |
 | 2026-11-05 | News: The Star (23 Jul 2026) article removed; photos removed from news cards (her photos are for the gallery only). Live address confirmed. |
 | 2026-11-02 | News section rebuilt as photo cards (her own photos, with alt text), titles reworded, dates added, newest first. The Star (23 Jul 2026) link added; Citizen Digital story added; Wikipedia moved out of News (still in `sameAs`). Postal address, email and phone removed from Contact and footer. |
