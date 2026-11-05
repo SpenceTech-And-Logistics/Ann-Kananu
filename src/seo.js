@@ -37,7 +37,7 @@ export function structuredData() {
     nationality: { '@type': 'Country', name: 'Kenya' },
     birthPlace: { '@type': 'Place', name: 'Embu County, Kenya' },
     jobTitle: 'Former Governor of Nairobi City County',
-    description: seo.description,
+    description: about.intro,
     image: abs(hero.photo),
     url: `${url}/`,
     knowsLanguage: about.languages.split(',').map((l) => l.trim()),

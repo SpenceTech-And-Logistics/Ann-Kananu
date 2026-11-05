@@ -140,6 +140,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; mar
 /* About */
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: start; }
 .about p { max-width: 640px; }
+.about .about-lead { font-size: clamp(19px, 1.7vw, 22px); line-height: 1.55; color: var(--ink); padding-left: 20px; border-left: 4px solid var(--saffron); margin: 0 0 26px; }
 .edu { background: #fff; border-radius: 28px 6px; padding: 34px; box-shadow: 0 20px 40px rgba(14,42,47,.08); }
 .edu h3 { font-size: 26px; margin-bottom: 18px; }
 .edu ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }

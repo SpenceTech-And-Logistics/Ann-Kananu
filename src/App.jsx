@@ -239,6 +239,7 @@ function About() {
       <div className="wrap about-grid">
         <div>
           <SectionHead kicker="About" title={about.title} />
+          <p className="about-lead" data-reveal>{about.intro}</p>
           {about.paragraphs.map((p, i) => <p key={i} data-reveal>{p}</p>)}
           <ul className="values" data-reveal aria-label="Personal attributes">
             {about.values.map((v) => <li key={v}>{v}</li>)}

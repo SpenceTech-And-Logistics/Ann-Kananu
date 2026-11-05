@@ -53,6 +53,9 @@ export const figuresNote = 'Bursary figure as reported in the press. Other figur
 
 export const about = {
   title: 'A public servant shaped by security, discipline and service',
+  // Lead paragraph, shown first in larger type. Also used as her description for search engines.
+  intro:
+    'Ann Kananu Mwenda is a Kenyan public administrator and former Governor of Nairobi City County, recognised as the first woman to hold the office. She served as Nairobi’s third Governor from November 2021 to August 2022, having previously served as Deputy Governor and Chief Officer for Disaster Management and Coordination. Her professional background includes 13 years at the Kenya Airports Authority, where she worked as a Security Supervisor responsible for quality control and training. Her career spans county leadership, public administration, security management and emergency coordination, marking a significant milestone for women’s representation in Kenya’s capital.',
   paragraphs: [
     'Anne Kananu Mwenda was born on 1 May 1980 in Embu County. She brings a background in criminology and security, and more than 17 years of experience across the public and private sectors.',
     'For 13 years she served at Kenya Airports Authority as the security officer in charge of quality control and training, checking airport security against ICAO Annex 17 and the national civil aviation security programme, and training airport staff and partner agencies.',
