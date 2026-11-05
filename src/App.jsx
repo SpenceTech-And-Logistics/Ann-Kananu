@@ -496,9 +496,6 @@ function News() {
           {news.map((n) => {
             const body = (
               <>
-                <span className="n-photo">
-                  {n.photo && <img src={n.photo} alt={n.photoAlt || ''} loading="lazy" decoding="async" />}
-                </span>
                 <span className="n-body">
                   <span className="n-meta">
                     <span className="outlet">{n.outlet}</span>

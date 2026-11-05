@@ -6,6 +6,7 @@ Living record of the site's search and sharing setup. Update the **Change log** 
 
 | What | File |
 | --- | --- |
+| 2026-11-05 | News: The Star (23 Jul 2026) article removed; photos removed from news cards (her photos are for the gallery only). Live address confirmed. |
 | Site address (used in every absolute link) | `site.config.js` → `siteUrl` |
 | Page title, description, share title, share image, other name spellings | `src/seo.js` → `seo` |
 | Structured data about her (Google "knowledge" facts) | `src/seo.js` → `structuredData()` |
@@ -36,8 +37,8 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *NEDP Maar
 
 ## To do
 
-- [ ] **Confirm the live address.** `siteUrl` is set to `https://ann-kananu.spencetechandlogistics.workers.dev`, which has not been checked. Update it to the real workers.dev address or custom domain, then redeploy.
-- [ ] After the live address is confirmed: add the site to **Google Search Console** and **Bing Webmaster Tools**, and submit `/sitemap.xml`.
+- [x] **Live address confirmed (2026-11-05):** `https://ann-kananu.spencetechandlogistics.workers.dev`. If a custom domain is added, change `siteUrl` in `site.config.js` and redeploy.
+- [ ] Add the site to **Google Search Console** and **Bing Webmaster Tools**, and submit `/sitemap.xml`.
 - [ ] Check the share preview with the **Facebook Sharing Debugger** and a WhatsApp test message.
 - [ ] Add the site link to her **Facebook page** "About" section (strongest signal tying the site to her).
 - [ ] Add more `sameAs` profiles (X, Instagram, YouTube, TikTok, LinkedIn) as soon as the links are given; fill the same links in `social` in `src/data.js`.
