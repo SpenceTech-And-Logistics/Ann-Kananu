@@ -92,7 +92,7 @@ export const about = {
 
 // Newest first.
 export const journey = [
-  { year: '23 Jul 2026', title: 'Joins UDA, eyes Maara', text: 'Joined the United Democratic Alliance (UDA) and said she will seek the Maara seat in Tharaka Nithi, subject to party primaries.' },
+  { year: '23 Jul 2026', title: 'Joins UDA, eyes Maara', text: 'Joined the United Democratic Alliance (UDA) and said she will seek the Maara seat in Tharaka Nithi.' },
   { year: 'May 2025', title: 'MSc Leadership and Governance', text: 'Began a master’s degree at Jomo Kenyatta University of Agriculture and Technology.' },
   { year: '16 Nov 2021', title: 'Governor of Nairobi', text: 'Sworn in as the first woman Governor of Nairobi City County. Served until 25 August 2022.' },
   { year: 'Jan 2021', title: 'Deputy Governor and Acting Governor', text: 'Signed the SGBV Bill into law and launched free ECDE funds.' },
@@ -129,7 +129,7 @@ export const quotes = [
 export const maara = {
   title: 'Maara, Tharaka Nithi',
   intro:
-    'On 23 July 2026 Anne Kananu said she will seek the Maara seat on a United Democratic Alliance (UDA) ticket, subject to party primaries.',
+    'On 23 July 2026 Anne Kananu said she will seek the Maara seat on a United Democratic Alliance (UDA) ticket.',
   partyFocus: ['Poverty eradication', 'Infrastructure', 'Jobs', 'Education', 'Clean water', 'Livelihoods'],
   plan: {
     placeholder: true,

@@ -57,6 +57,7 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *UDA Maara
 
 | Date | Change |
 | --- | --- |
+| 2026-11-05 | "Subject to party primaries" removed from the Journey card and Maara section. |
 | 2026-11-05 | Party corrected from NEDP to UDA in the Journey card, Maara section and Person `memberOf`; Maara chips heading now "Areas of focus". Target search updated to *UDA Maara*. |
 | 2026-11-05 | About: birth paragraph removed; KAA and Nairobi City County paragraphs merged into the lead bio (one paragraph, also the Person `description`). |
 | 2026-11-05 | About: new lead bio paragraph (first woman and third Governor of Nairobi, KAA background). Same text now used as the Person `description` in structured data. |
