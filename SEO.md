@@ -57,6 +57,7 @@ Secondary: *first woman governor Nairobi*, *former Nairobi governor*, *UDA Maara
 
 | Date | Change |
 | --- | --- |
+| 2026-11-05 | Colour scheme changed to purple (deep aubergine, royal purple, gold accent, orchid). Share image, app icon, favicon, theme colour and manifest re-tinted to match. Re-scrape the Facebook Sharing Debugger so previews pick up the new share image. |
 | 2026-11-05 | Journey card and About bio: acting role now reads "Acting Chief Officer, Agriculture, Water, Energy and Sanitation". |
 | 2026-11-05 | "Subject to party primaries" removed from the Journey card and Maara section. |
 | 2026-11-05 | Party corrected from NEDP to UDA in the Journey card, Maara section and Person `memberOf`; Maara chips heading now "Areas of focus". Target search updated to *UDA Maara*. |
